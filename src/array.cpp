@@ -8,6 +8,8 @@
 
 #include <iostream>
 #include <stdio.h>
+#include <algorithm>
+#include <string>
 using namespace std;
 
 
@@ -16,6 +18,9 @@ using namespace std;
 
 
 char arr[9][6]={"one","two","three","four","five","six","seven","eight","nine"};
+
+string array_test="test";
+
 
 int main() {
 
@@ -65,6 +70,21 @@ int main() {
 		}
 
 	}
+	 string str="test ";
+     int s=0;
+	 for(int i=str.size()+1;i>=0; i--)
+	    {
+	  //  cout<<" "<<str[str.size()]<<endl;
+	   // cout<<str[i];
+		 array_test[s]=str[i];
+	    cout<<array_test[s];
+	    s++;
+
+	  }
+	 std::reverse(str.begin(), str.end());
+	 cout<<str;
+	//  cout<<array;
+
 
 
 	//	cout<<"&y="<<&y<<"arr="<< **&*&(arr)<<" "<<*&*&arr[0]<<endl<<arr+1<<" "<<arr+2<<" "<<arr+3<<'\n';
